@@ -40,6 +40,29 @@ app.get('/client', async (req, res) => {
     }
 });
 
+app.post('/login', async (req, res) => {
+    try {
+        const { loginEmail, loginPassword } = req.body;
+
+        const client = await Client.findOne({
+            registerEmail: loginEmail,
+            registerPassword: loginPassword
+        });
+
+        if (client) {
+            res.status(200).json({
+                registerName: client.registerName,
+                registerPrenom: client.registerPrenom,
+                registerEmail: client.registerEmail
+            });
+        } else {
+            res.status(401).json({ message: "Email ou mot de passe incorrect" });
+        }
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+});
+
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });

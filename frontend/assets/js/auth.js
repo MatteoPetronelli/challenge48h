@@ -42,7 +42,7 @@ loginForm.addEventListener('submit', async (e) => {
     }
 
     try {
-        const loginResponse = await fetch('http://localhost:8080/client', {
+        const loginResponse = await fetch('http://localhost:8080/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -53,8 +53,8 @@ loginForm.addEventListener('submit', async (e) => {
         if(loginResponse.ok)
         {
             const result = await loginResponse.json();
-            localStorage.setItem('token', result.token);
-            alert('Connexion réussie');
+            localStorage.setItem('user', JSON.stringify(result));
+            window.location.href = 'index.html';
         } else {
             alert('Email ou mot de passe incorrect');
         }
