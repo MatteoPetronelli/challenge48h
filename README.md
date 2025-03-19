@@ -17,7 +17,7 @@ Ce projet est une application web pour un Bureau Des Sports, permettant aux util
 
 ## Structure du projet
 ```
-projet-bds/
+Challenge48h/
 ├── public/
 │   ├── assets/
 │   │   ├── css/
