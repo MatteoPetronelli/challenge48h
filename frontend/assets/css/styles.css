@@ -1,0 +1,55 @@
+/* Styles généraux */
+body {
+    background: radial-gradient(circle at top left, rgba(122, 72, 221, 0.6), rgba(0, 0, 0, 1)), #000;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Barre de navigation */
+.navbar {
+    border-bottom: none;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Style des bulles de texte */
+.bubble-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style des cartes d'événements */
+.card {
+    border: 1px solid #555;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Style des boutons */
+button {
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    border-top: none;
+    padding: 10px 0;
+    background: #000;
+}
