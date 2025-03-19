@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDS - Connexion & Inscription</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-dark text-light">
+    
+    <!-- Header -->
+    <nav class="navbar p-3 border-0" style="background: transparent;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">
+                <img src="assets/images/logo.png" alt="Logo BDS" class="logo">
+                BDS
+            </a>
+            <form class="d-flex" style="flex-grow: 1; max-width: 500px;">
+                <input class="form-control me-2 w-100" type="search" placeholder="Rechercher un événement" aria-label="Search">
+            </form>
+            <a href="index.html" class="btn btn-outline-light me-2">Accueil</a>
+            <a href="presentation.html" class="btn btn-outline-light">Présentation</a>
+        </div>
+    </nav>
+
+    <!-- Connexion & Inscription -->
+    <div class="container text-center my-5">
+        <div class="bubble-box">
+            <h1 class="fw-bold">Connexion & Inscription</h1>
+            <p class="lead">Créez un compte ou connectez-vous pour profiter pleinement du site du BDS.</p>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div class="card bg-dark text-light border-light p-4">
+                    <h3 class="text-center">Se connecter</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Adresse e-mail</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="Votre email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Mot de passe</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Votre mot de passe">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Connexion</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div class="card bg-dark text-light border-light p-4">
+                    <h3 class="text-center">Créer un compte</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="registerName" placeholder="Votre nom">
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Adresse e-mail</label>
+                            <input type="email" class="form-control" id="registerEmail" placeholder="Votre email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Mot de passe</label>
+                            <input type="password" class="form-control" id="registerPassword" placeholder="Votre mot de passe">
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 p-3 border-0" style="background: transparent;">
+        <p>© 2025 BDS - Tous droits réservés</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
