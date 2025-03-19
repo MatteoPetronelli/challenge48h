@@ -12,10 +12,11 @@ mongoose.connect('mongodb://localhost:27017/app')
 .catch((err) => {console.log("Erreur de connection à la database", err)});
 
 const clientSchema = new mongoose.Schema({
-    nom: String,
-    prenom: String,
-    email: String,
-    age: Number
+    registerName: String,
+    registerPrenom: String,
+    registerEmail: String,
+    registerAge: Number,
+    registerPassword: String
 });
 
 const Client = mongoose.model('Client', clientSchema);
