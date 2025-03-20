@@ -15,6 +15,9 @@ body {
     margin-right: 10px;
 }
 
+#logoutBtn {
+    display: none;
+}
 /* Style des bulles de texte */
 .bubble-box {
     background: rgba(255, 255, 255, 0.1);
